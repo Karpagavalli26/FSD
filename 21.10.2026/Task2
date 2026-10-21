@@ -1,0 +1,39 @@
+
+package oops;
+
+public class BankAccountTypes {
+    public static void main(String[] args) {
+        SavingsAccount s = new SavingsAccount();
+        CurrentAccount c = new CurrentAccount();
+
+        s.accountNumber = 1001;
+        s.balance = 25000;
+        s.displaySavings();
+
+        c.accountNumber = 1002;
+        c.balance = 50000;
+        c.displayCurrent();
+    }
+}
+
+class BankAccount {
+    int accountNumber;
+    int balance;
+}
+
+class SavingsAccount extends BankAccount {
+    void displaySavings() {
+        System.out.println("Savings Account");
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: " + balance);
+        System.out.println();
+    }
+}
+
+class CurrentAccount extends BankAccount {
+    void displayCurrent() {
+        System.out.println("Current Account");
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: " + balance);
+    }
+}
