@@ -1,0 +1,46 @@
+
+
+class Employee {
+    int employeeId;
+    String name;
+    double basicSalary;
+
+    double calculateSalary() {
+        return basicSalary;
+    }
+}
+
+class PermanentEmployee extends Employee {
+    double calculateSalary() {
+        return basicSalary + (basicSalary * 20 / 100);
+    }
+}
+
+class ContractEmployee extends Employee {
+    double calculateSalary() {
+        return basicSalary + 2000;
+    }
+}
+
+public class EmployeeSalary {
+    public static void main(String[] args) {
+
+        Employee e;
+
+        PermanentEmployee p = new PermanentEmployee();
+        p.employeeId = 101;
+        p.name = "Ravi";
+        p.basicSalary = 20000;
+
+        e = p;
+        System.out.println(e.calculateSalary());
+
+        ContractEmployee c = new ContractEmployee();
+        c.employeeId = 102;
+        c.name = "Raja";
+        c.basicSalary = 15000;
+
+        e = c;
+        System.out.println(e.calculateSalary());
+    }
+}
