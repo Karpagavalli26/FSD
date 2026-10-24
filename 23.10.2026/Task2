@@ -1,0 +1,39 @@
+abstract class Restaurant {
+    abstract void displayMenu();
+    abstract void calculateBill();
+}
+
+class PizzaRestaurant extends Restaurant {
+    void displayMenu() {
+        System.out.println("Pizza Menu");
+        System.out.println("Pizza - Rs.200");
+    }
+
+    void calculateBill() {
+        System.out.println("Pizza Bill = Rs.200");
+    }
+}
+
+class BurgerRestaurant extends Restaurant {
+    void displayMenu() {
+        System.out.println("Burger Menu");
+        System.out.println("Burger - Rs.100");
+    }
+
+    void calculateBill() {
+        System.out.println("Burger Bill = Rs.100");
+    }
+}
+
+public class abstractt {
+    public static void main(String[] args) {
+        PizzaRestaurant p = new PizzaRestaurant();
+        BurgerRestaurant b = new BurgerRestaurant();
+
+        p.displayMenu();
+        p.calculateBill();
+
+        b.displayMenu();
+        b.calculateBill();
+    }
+}
