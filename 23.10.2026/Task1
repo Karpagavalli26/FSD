@@ -1,0 +1,49 @@
+class Student {
+    private int studentId;
+    private String studentName;
+    private int marks;
+
+    public void setStudentId(int id) {
+        studentId = id;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentName(String name) {
+        studentName = name;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setMarks(int m) {
+        if (m >= 0 && m <= 100) {
+            marks = m;
+        } else {
+            System.out.println("Invalid marks Enter marks between 0 and 100.");
+        }
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+public class StudentTask {
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        s.setStudentId(101);
+        s.setStudentName("Arun");
+        s.setMarks(85);
+
+        System.out.println("Student ID: " + s.getStudentId());
+        System.out.println("Student Name: " + s.getStudentName());
+        System.out.println("Marks: " + s.getMarks());
+
+        s.setMarks(120);
+    }
+}
