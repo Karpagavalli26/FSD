@@ -1,0 +1,34 @@
+CREATE DATABASE ConditionDB;
+USE ConditionDB;
+CREATE TABLE employee (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    salary INT
+);
+INSERT INTO employee VALUES
+(1, 'Arun', 22, 20000),
+(2, 'Priya', 25, 25000),
+(3, 'Kumar', 28, 30000),
+(4, 'Divya', 30, 35000),
+(5, 'Ravi', 24, 22000);
+SELECT * FROM employee
+WHERE salary BETWEEN 20000 AND 30000;
+SELECT * FROM employee
+WHERE salary BETWEEN 25000 AND 35000;
+SELECT * FROM employee
+WHERE age BETWEEN 22 AND 28;
+SELECT * FROM employee
+WHERE id BETWEEN 1 AND 3;
+SELECT * FROM employee
+WHERE age BETWEEN 24 AND 30;
+SELECT * FROM employee
+WHERE salary NOT BETWEEN 20000 AND 30000;
+SELECT * FROM employee
+WHERE salary NOT BETWEEN 25000 AND 35000;
+SELECT * FROM employee
+WHERE age NOT BETWEEN 22 AND 28;
+SELECT * FROM employee
+WHERE id NOT BETWEEN 1 AND 3;
+SELECT * FROM employee
+WHERE age NOT BETWEEN 24 AND 30;
