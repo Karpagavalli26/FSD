@@ -1,0 +1,2 @@
+CREATE DATABASE FacePrep;
+USE FacePrep;
