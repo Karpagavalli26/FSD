@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Application Form</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 25px;
+            width: 450px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Employee Application Form</h2>
+
+        <form>
+
+            Full Name:
+            <input type="text" name="fullname">
+            <br><br>
+
+            Email Address:
+            <input type="email" name="email">
+            <br><br>
+
+            Phone Number:
+            <input type="tel" name="phone">
+            <br><br>
+
+            Job Role:
+            <select name="jobrole">
+                <option>Select Job Role</option>
+                <option>Java Developer</option>
+                <option>Python Developer</option>
+                <option>Web Developer</option>
+                <option>Data Analyst</option>
+            </select>
+            <br><br>
+
+            Experience:
+            <br>
+            <input type="radio" name="experience"> Fresher
+            <input type="radio" name="experience"> 1–2 Years
+            <br>
+            <input type="radio" name="experience"> 3–5 Years
+            <input type="radio" name="experience"> Above 5 Years
+            <br><br>
+
+            Technical Skills:
+            <br>
+            <input type="checkbox" name="skills"> Java
+            <input type="checkbox" name="skills"> Python
+            <input type="checkbox" name="skills"> HTML
+            <input type="checkbox" name="skills"> CSS
+            <input type="checkbox" name="skills"> SQL
+            <br><br>
+
+            Upload Resume:
+            <input type="file" name="resume">
+            <br><br>
+
+            Expected Salary:
+            <input type="number" name="salary">
+            <br><br>
+
+            Cover Letter:
+            <br>
+            <textarea name="coverletter" rows="4" cols="40"></textarea>
+            <br><br>
+
+            <center>
+                <input type="submit" value="Submit">
+            </center>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

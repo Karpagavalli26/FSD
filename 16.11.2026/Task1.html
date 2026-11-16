@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 25px;
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <form>
+
+            Student Name:
+            <input type="text" name="studentName">
+            <br><br>
+
+            Email:
+            <input type="email" name="email">
+            <br><br>
+
+            Mobile Number:
+            <input type="tel" name="mobile">
+            <br><br>
+
+            Date of Birth:
+            <input type="date" name="dob">
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <br><br>
+
+            Department:
+            <select name="department">
+                <option>Select Department</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>Mechanical</option>
+            </select>
+            <br><br>
+
+            Skills:
+            <input type="checkbox"> Java
+            <input type="checkbox"> Python
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <br><br>
+
+            Address:
+            <br>
+            <textarea rows="4" cols="35"></textarea>
+            <br><br>
+
+            <center>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </center>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
